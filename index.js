@@ -14,7 +14,7 @@ app.use(cors())
 
 //RUTAS
 app.use('/api/users', require('./routes/userRouter'));
-
+app.use('/api/contacts', require('./routes/contactRouter'));
 
 app.listen(app.get('port'), console.log('Server on port ' + app.get('port')));
 
